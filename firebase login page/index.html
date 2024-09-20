@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Sign Up</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <div class="container">
+        <div class="form-wrapper">
+            <!-- Login Form -->
+            <div id="login-form">
+                <h2>Student-Login</h2>
+                <form>
+                    <input id="login_email" type="email" placeholder="Email" required>
+                    <input id="login_password" type="password" placeholder="Password" required>
+                    <button id="login_btn" type="submit">Log In</button>
+                    <p class="switch">Don't have an register? 
+                        <a href="#" id="switch-to-signup">Admin</a>
+                    </p>
+                </form>
+            </div> 
+
+            <!-- Signup Form -->
+            <div id="signup-form" style="display:none;">
+                <h2>Administration</h2>
+                <form>
+                    <input id="signup_name" type="text" placeholder="Name" required>
+                    <input id="signup_lname" type="text" placeholder="Last Name" required>
+                    <input id="signup_email" type="email" placeholder="Email" required>
+                    <input id="signup_password" type="password" placeholder="Password" required>
+                    <input id="signup_cnic" type="password" placeholder="CNIC" required>
+                    <button id="signup_btn" type="submit">Register</button>
+                    <p class="switch">SIGN-IN 
+                        <a href="./Student Page/index.html" id="switch-to-login">Student</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
